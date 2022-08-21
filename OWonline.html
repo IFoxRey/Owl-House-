@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Игра</title>
+		<noscript><meta http-equiv="refresh" content="0; URL=/noscript"></noscript>
+		<script async src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"></script>
+		<script>
+		var p = '663d57242fe6defcf59d84bdbc754239', s = '1536x864x24', z = '125~?', t = '3', u = 'catwar.su', c = 'ab89770866f414ef858dd231efc20d5a', w = '532207dd48ba93f1f300cbd7e1fe945a', v = 'Google Inc. (AMD)~ANGLE (AMD, AMD Radeon(TM) Vega 8 Graphics Direct3D11 vs_5_0 ps_5_0, D3D11)', f = '8d590ab111d0d9da6c73fbd3b6bac950', l = 'ru~ru,en;q=0.9,es;q=0.8', flag = true;
+		</script>
+		<style>textarea {padding: 4px}</style>
+		<link rel="stylesheet" href="C:\NewProjecеt.OWonline\e.OWonline\css\all.css">
+		<link rel="stylesheet" href="C:\NewProjecеt.OWonline\e.OWonline\css\blank.css">
+		<link rel="stylesheet" href="C:\NewProjecеt.OWonline\e.OWonline\css\ow1\jquery-ui.css">
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\jquery.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\key.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\ow1\jquery-ui.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\ow1\func.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\ow1\data.php"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\dist\ow1.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\ssl.js"></script>
+		<script src="C:\NewProjecеt.OWonline\e.OWonline\js\all.js"></script>
+	</head>
+	<body>
+		<div id="app" data-mobile="0" data-time="1661002974" style="display: block;">
+			<span class="other_cats_list">
+				<a href="/login id=483130">Совушка</a>
+			</span>
+			<br>
+			<p id="error"></p>
+			<div id="timer"></div>
+			<div id="fightPanel" style="display: none; width: 320px;">
+				<img src="C:\NewProjecеt.OWonline\OWonline\ow1\symbole\unlock.png" id="block">
+				<input type="button" value="I" class="hotkey">
+				<input type="button" value="O" class="hotkey">
+				<input type="button" value="L" class="hotkey">
+				<input type="button" value="J" class="hotkey">
+				<input type="button" value="K" class="hotkey">
+				<input type="button" value="T+1" class="hotkey">
+				<input type="button" value="T+2" class="hotkey">
+				<input type="button" value="T+3" class="hotkey">
+				<div id="fightLog" style="height: 70px;"></div>
+			</div>
+			<span class="small">
+				<a href="Home.html">Мой профиль</a>
+				| 
+				<a href="Forum.html">Форум</a>
+				<span id="newchat"></span>
+				| 
+				<a href="Mail.html">ЛС</a>
+				<span id="newls"></span>
+			</span>
+				<br>
+			<table id="main_table" style="border-spacing: 2px;">
+				<tbody>
+				<tr id="tr_chat">
+					<td>
+						<form id="chat_form">
+							<span id="txt">
+								<input maxlength="255" size="1" id="text" autocomplete="off">
+								<!---->
+								<!---->
+							</span>
+							<input type="submit" id="msg_send" value="OK">
+							<!---->
+							<span style>
+								<span id="volume" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+									<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span>
+								</span>
+								<b>(правее — громче)</b>
+							</span>
+						</form>
+						<div id="cws_chat_msg">
+							<hr>
+						</div>
+						<div id="chat_msg"> wfd-invisible="true">
+							<hr>
+						</div>
+					</td>
+				</tr>
+				<tr id="tr_actions">
+					<td>
+						<span class="title">Действия</span>
+						<div id="block_deys">
+							<table style="width: 100%;">
+								<tbody>
+									<tr>
+										<td style="width: 70%;">
+											<div id="akten">
+												<!---->
+												<a href="ссылка на сон" data-id="1" class="dey">
+													<img src="C:\NewProjecеt.OWonline\OWonline\ow1\actions\1.png" title="Поспать">
+												</a>	
+											</div>
+											<div id="dein" wfd-invisible="true">
+												<!---->
+												<a href="ссылка на разговор" data-id="dialog">
+													<img src="actions/talk.png">
+												</a>
+											</div>
+										</td>										
+										<td>
+											 Действия с соседней совой: 
+											<br>
+											<select id="mit">
+												<option value="0">Действия с собой</option>
+											</select>
+											<br>
+											<input type="button" id="mitok" value="Показать">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="block_mess"></div>
+					</td>
+				</tr>
+				<tr id="tr_field">
+					<td id="act">
+						<div id="cages_overflow">	
+							<div id="cages_div" style="background-image: url("C:\NewProjecеt.OWonline\OWonline\ow1\spacoj\location1.jpg");">
+								<table id="cage">
+									<tbody>
+										<tr>									
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<span class="move_parent">
+														<img src="C:\NewProjecеt.OWonline\OWonline\ow1\moves\1.png" class="move_img">
+														<span clas="move_name">Локация №1</span>
+													</span>
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+											<td class="cage">
+												<div class="cage_items">
+													<!---->
+													<!---->
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!---->
+								<!---->
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr id="tr_mouth">
+					<td>
+						<span class="title">Предметы в клюве</span>
+						
+						
+					</td>
+				</tr>
+				<tr id="tr_info"></tr>
+				</tbody>
+			</table>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>
